@@ -1,4 +1,3 @@
-
 ```markdown
 # LabelStudio Dataset Label Convert
 
@@ -14,9 +13,9 @@
 | **AnyLabeling** | 矩形框 + 多边形 | LabelStudio JSON + XML |
 
 ## 项目结构
-
 ```
 
+```Python
 Labelstudio_dataset_label_convert/
 ├── main.py                          # 统一入口
 ├── config.yaml                      # 配置文件
@@ -32,12 +31,11 @@ Labelstudio_dataset_label_convert/
 │   ├── labelstudio_classes_demo.xml # 类别配置 XML 示例
 │   └── AnyLabeling_label_demo.json  # AnyLabeling 输入示例
 └── dataset_convert/                 # 转换结果输出目录
-
 ```
 
 ## 安装依赖
 
-```bash
+```Python
 pip install pyyaml
 pip install Pillow    # 可选，用于获取图片尺寸 (未安装时自动回退到纯 Python 解析)
 ```
