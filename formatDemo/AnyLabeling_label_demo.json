@@ -1,0 +1,9 @@
+{
+  "name": "200317691.png",   
+  "objects": [               
+    {
+      "label": "Wrench",     
+      "polygon": [[1,1],[2,2]]  
+    }
+  ]
+}

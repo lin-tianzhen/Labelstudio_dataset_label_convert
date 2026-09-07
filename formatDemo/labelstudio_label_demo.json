@@ -1,0 +1,26 @@
+[
+  {
+    "data": {
+      "image": "/data/local-files/?d=./images/sample.jpg"
+    },
+    "predictions": [
+      {
+        "result": [
+          {
+            "id": "box1",
+            "type": "rectanglelabels",
+            "from_name": "label",
+            "to_name": "image",
+            "value": {
+              "x": 10.0,
+              "y": 20.0,
+              "width": 30.0,
+              "height": 40.0,
+              "rectanglelabels": ["cat"]
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

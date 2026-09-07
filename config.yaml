@@ -1,0 +1,32 @@
+# ============================================================
+# 数据集标注转换配置文件
+# 支持格式: yolo / voc / coco / anylabeling
+# 命令行参数优先级高于此配置文件
+# ============================================================
+
+# 数据集格式: yolo | voc | coco | anylabeling
+format: anylabeling
+
+# 数据集根目录 (绝对路径或相对当前工作目录)
+dataset_root: /Users/lintianzhen/Documents/ltz/博士/博士论文/dataset/PIXray
+
+# 输出目录 (留空则默认: 数据集根目录/labelstudio_output)
+output_dir: null
+
+# 图片子目录名 (相对于 dataset_root, null=自动查找, "."=根目录)
+# YOLO/COCO 默认: images
+# VOC 默认自动查找 JPEGImages 或 images
+# AnyLabeling 默认自动查找 images/JPEGImages/根目录
+images_subdir: null
+
+# 标注子目录名 (相对于 dataset_root, null=自动查找, "."=根目录)
+# YOLO 默认: labels
+# VOC 默认自动查找 Annotations
+# AnyLabeling 默认自动查找 labels/annotations/json/根目录
+labels_subdir: null
+
+# COCO 标注 JSON 文件路径 (仅 COCO 使用, 留空则自动查找)
+annotation_json: null
+
+# YOLO 类别文件路径 (仅 YOLO 使用, 留空则自动查找 classes.txt)
+classes_file: null

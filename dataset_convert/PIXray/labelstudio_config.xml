@@ -1,0 +1,20 @@
+<View>
+  <Image name="image" value="$image"/>
+  <PolygonLabels name="polylabel" toName="image">
+    <Label value="Bat" background="green"/>
+    <Label value="Battery" background="blue"/>
+    <Label value="Dart" background="red"/>
+    <Label value="Fireworks" background="yellow"/>
+    <Label value="Gun" background="purple"/>
+    <Label value="Hammer" background="orange"/>
+    <Label value="Knife" background="cyan"/>
+    <Label value="Lighter" background="magenta"/>
+    <Label value="Pliers" background="lime"/>
+    <Label value="Pressure_vessel" background="pink"/>
+    <Label value="Razor_blade" background="olive"/>
+    <Label value="Saw_blade" background="brown"/>
+    <Label value="Scissors" background="navy"/>
+    <Label value="Screwdriver" background="teal"/>
+    <Label value="Wrench" background="maroon"/>
+  </PolygonLabels>
+</View>
