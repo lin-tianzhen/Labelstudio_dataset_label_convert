@@ -23,12 +23,14 @@ from converters.YOLO_convert import convert as yolo_convert
 from converters.VOC_convert import convert as voc_convert
 from converters.COCO_convert import convert as coco_convert
 from converters.AnyLabeling_convert import convert as anylabeling_convert
+from converters.TXT_bbox_convert import convert as txt_bbox_convert
 
 CONVERTERS = {
     "yolo": yolo_convert,
     "voc": voc_convert,
     "coco": coco_convert,
     "anylabeling": anylabeling_convert,
+    "txt_bbox": txt_bbox_convert,
 }
 def load_config(config_path: str) -> dict:
     """加载 YAML 配置文件"""
@@ -101,7 +103,7 @@ def main():
     )
     parser.add_argument("--config", "-c", default="config.yaml",
                         help="YAML 配置文件路径 (默认: config.yaml)")
-    parser.add_argument("--format", "-f", choices=["yolo", "voc", "coco", "anylabeling"],
+    parser.add_argument("--format", "-f", choices=["yolo", "voc", "coco", "anylabeling", "txt_bbox"],
                         help="数据集格式 (覆盖配置文件)")
     parser.add_argument("--dataset-root", "-d", help="数据集根目录 (覆盖配置文件)")
     parser.add_argument("--output", "-o", help="输出目录 (覆盖配置文件)")
