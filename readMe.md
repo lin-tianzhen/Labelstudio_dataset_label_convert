@@ -1,19 +1,17 @@
-```markdown
 # LabelStudio Dataset Label Convert
 
 将 YOLO / Pascal-VOC / COCO / AnyLabeling 格式的数据集标注转换为 [Label Studio](https://labelstud.io/) 可识别的格式。
 
 ## 支持的转换
 
-| 源格式 | 标注类型 | 输出 |
-|--------|---------|------|
-| **YOLO** | 矩形框 (归一化坐标) | LabelStudio JSON + XML |
-| **Pascal VOC** | 矩形框 (XML bndbox) | LabelStudio JSON + XML |
-| **COCO** | 矩形框 (JSON bbox) | LabelStudio JSON + XML |
-| **AnyLabeling** | 矩形框 + 多边形 | LabelStudio JSON + XML |
+| 源格式                | 标注类型            | 输出                   |
+| --------------------- | ------------------- | ---------------------- |
+| **YOLO**        | 矩形框 (归一化坐标) | LabelStudio JSON + XML |
+| **Pascal VOC**  | 矩形框 (XML bndbox) | LabelStudio JSON + XML |
+| **COCO**        | 矩形框 (JSON bbox)  | LabelStudio JSON + XML |
+| **AnyLabeling** | 矩形框 + 多边形     | LabelStudio JSON + XML |
 
 ## 项目结构
-```
 
 ```Python
 Labelstudio_dataset_label_convert/
